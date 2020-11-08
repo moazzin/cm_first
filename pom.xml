@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.poromix.crawler</groupId>
+    <artifactId>tools</artifactId>
+    <version>1.0.0.0</version>
+    <name>Tools</name>
+    <parent>
+        <groupId>org.crossmobile</groupId>
+        <artifactId>cmproject</artifactId>
+        <version>3.3.0</version>
+        <relativePath/>
+    </parent>
+    <properties>
+        <main.class>com.poromix.crawler.tools.Main</main.class>
+        <launch.storyboard>Launch Screen</launch.storyboard>
+        <main.storyboard>Main</main.storyboard>
+        <orientations.supported>UIInterfaceOrientationPortrait:UIInterfaceOrientationLandscapeRight:UIInterfaceOrientationLandscapeLeft</orientations.supported>
+    </properties>
+    <packaging>jar</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>org.crossmobile</groupId>
+            <artifactId>cmtheme-bright</artifactId>
+            <version>${crossmobile.version}</version>
+        </dependency>
+    </dependencies>
+    <repositories>
+        <repository>
+            <id>crossmobile</id>
+            <url>https://mvn.crossmobile.org/content/repositories/crossmobile/</url>
+        </repository>
+    </repositories>
+    <profiles>
+        <profile>
+            <id>desktop</id>
+            <dependencies/>
+        </profile>
+        <profile>
+            <id>ios</id>
+            <dependencies/>
+        </profile>
+        <profile>
+            <id>android</id>
+            <dependencies/>
+        </profile>
+        <profile>
+            <id>uwp</id>
+            <dependencies/>
+        </profile>
+    </profiles>
+</project>
